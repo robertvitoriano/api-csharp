@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace APICsharp.Models
 {
-    public class Cateogry
+    public class Category
     {
         [Key]
 

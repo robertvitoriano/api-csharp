@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 using APICsharp.Models;
 
-namespace APICsharp{
+namespace APICsharp.Data{
 
     public class DataContext : DbContext
     {
@@ -15,6 +15,6 @@ namespace APICsharp{
     
       public DbSet<Product>Products {get;set;}
 
-      public DbSet<Cateogry> Categories {get;set;}
+      public DbSet<Category> Categories {get;set;}
     }
 }

@@ -23,7 +23,7 @@ namespace APICsharp.Models
         [Required(ErrorMessage="Esse campo é obrigatório")]
         [Range(1,int.MaxValue,ErrorMessage="Categoria inválida")]
         public int CategoryId {get;set;}
-        // public Category Category {get;set;}
+        public Category Category {get;set;}
 
     }
 }

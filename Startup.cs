@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using APICsharp.Data;
 
 namespace APICsharp
 {
@@ -28,6 +29,7 @@ namespace APICsharp
         {
             //Especificando banco de dados
             services.AddDbContext<DataContext>(opt=>opt.UseInMemoryDatabase("Database"));
+            services.AddScoped<DataContext,DataContext>();
             services.AddControllers();
         }
 
