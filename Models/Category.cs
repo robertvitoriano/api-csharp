@@ -5,7 +5,6 @@ namespace APICsharp.Models
     public class Category
     {
         [Key]
-
         public int Id {get; set;}
 
         [Required(ErrorMessage="Esse é um campo obrigatório")]
