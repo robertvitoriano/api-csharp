@@ -9,7 +9,7 @@ using APICsharp.Models;
 namespace APICsharp.Controllers
 {
     [ApiController]
-    [Route("v1/caegories")]
+    [Route("v1/categories")]
 
     public class CategoryController : ControllerBase
     {
