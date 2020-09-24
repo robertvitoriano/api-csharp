@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 using APICsharp.Models;
 
-namespace APICsharp.Data{
+namespace APICsharp{
 
     public class DataContext : DbContext
     {
