@@ -28,7 +28,7 @@ namespace APICsharp
         public void ConfigureServices(IServiceCollection services)
         {
             //Especificando banco de dados
-            services.AddDbContext<DataContext>(opt=>opt.UseInMemoryDatabase("Database"));
+            services.AddDbContext<DataContext>(opt=>opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<DataContext,DataContext>();
             services.AddControllers();
         }
